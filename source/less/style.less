@@ -1,0 +1,44 @@
+@import "main-nav.less";
+@import "page-header.less";
+@import "page-main.less";
+@import "welcome-screen.less";
+@import "intro.less";
+@import "advantages.less";
+@import "features.less";
+@import "extra-advantages.less";
+@import "page-footer.less";
+@import "promo-screen.less";
+@import "media";
+
+body {
+  padding: 0;
+  margin: 0;
+  min-width: 320px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2f2;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
