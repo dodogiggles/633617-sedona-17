@@ -5,10 +5,10 @@
 @import "intro.less";
 @import "advantages.less";
 @import "features.less";
-@import "extra-advantages.less";
 @import "page-footer.less";
 @import "promo-screen.less";
-@import "media";
+@import "media.less";
+@import "variables.less";
 
 body {
   padding: 0;
@@ -42,3 +42,8 @@ body {
   height: auto;
 }
 
+@media (min-width: @desktop-width) {
+  body {
+    background-color: #f2f2f2;
+  }
+}

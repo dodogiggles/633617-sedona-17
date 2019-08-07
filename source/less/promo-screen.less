@@ -2,7 +2,36 @@
 background-color: #ffffff;
 background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
 background-repeat: no-repeat, no-repeat;
-background-position: bottom, center top;
-background-size: cover;
-height: 390px;
+height: 158px;
+background-size: auto, auto;
+background-position: left bottom, left bottom;
+}
+
+.promo-screen__logo {
+  text-align: center;
+  padding-top: 52px;
+}
+
+@media (min-width: @tablet-width) {
+  .promo-screen {
+    height: 290px;
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
+    background-position: left bottom, left bottom;
+    background-size: contain, cover;
+  }
+  .promo-screen__logo {
+    padding-top: 100px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo-screen {
+    background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
+    height: 300px;
+    background-position: left bottom, left bottom;
+    background-size: contain, cover;
+  }
+  .promo-screen__logo {
+    padding-top: 95px;
+  }
 }
