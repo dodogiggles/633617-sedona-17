@@ -106,7 +106,7 @@
   }
   .main-nav__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 14px;
     line-height: 26px;
     background-color: #ffffff;
@@ -120,6 +120,10 @@
   .site-list__item {
     border: none;
     width: 153px;
+
+    &:nth-child(2) {
+      margin-right: 156px;
+    }
 
     &:last-child {
       box-shadow: none;
@@ -143,5 +147,9 @@
 @media (min-width: @desktop-width) {
   .site-list__item {
     width: 240px;
+
+    &:nth-child(2) {
+      margin-right: 240px;
+    }
   }
 }
