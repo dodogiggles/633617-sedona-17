@@ -1,9 +1,8 @@
 .page-header {
+  display: flex;
 	position: relative;
   z-index: 2;
-  padding-bottom: 56px;
-  min-height: 279px;
-	background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .page-header__logo {
@@ -15,4 +14,30 @@
 	height: 56px;
 	text-align: center;
   z-index: 10;
+}
+
+.page-header__logo-img {
+  width: 102px;
+  height: 83px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    width: @tablet-width;
+    margin: 0 auto;
+    width: @tablet-width;
+  }
+  .page-header__logo {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    width: @desktop-width;
+  }
+  .page-header__logo-img {
+    width: 187px;
+    height: 96px;
+  }
 }

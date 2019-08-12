@@ -5,15 +5,14 @@
 @import "intro.less";
 @import "advantages.less";
 @import "features.less";
-@import "extra-advantages.less";
 @import "page-footer.less";
 @import "promo-screen.less";
-@import "media";
+@import "media.less";
+@import "variables.less";
 
 body {
   padding: 0;
   margin: 0;
-  min-width: 320px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -42,3 +41,15 @@ body {
   height: auto;
 }
 
+@media (min-width: @desktop-width) {
+  body {
+    background-color: #f2f2f2;
+  }
+  .container {
+    margin: 0 auto;
+    position: relative;
+    background-color: #ffffff;
+    max-width: 1200px;
+    box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+  }
+}
