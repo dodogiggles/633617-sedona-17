@@ -1,24 +1,73 @@
 .features {
   margin: 0 auto;
-  padding-bottom: 37px;
+  padding-top: 10px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  min-height: 416px;
   background-color: #ffffff;
   list-style: none;
 }
 
 .features__item {
   position: relative;
-  margin-bottom: 27px;
-  padding-left: 50px;
   box-sizing: border-box;
+  padding-top: 26px;
+  padding-right: 30px;
+  padding-bottom: 0;
+  padding-left: 70px;
 }
 
 .features__title {
-  margin-top: 10px;
-  margin-bottom: 15px;
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
   color: #000000;
+}
+
+.features__title--home::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  width: 39px;
+  height: 38px;
+  background-image: url("../img/icon-house.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.features__title--favors::before {
+  content: "";
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    width: 32px;
+    height: 38px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.features__title--food::before {
+  content: "";
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    width: 40px;
+    height: 36px;
+    background-image: url("../img/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.features__text {
+  margin-top: 15px;
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-right: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -41,6 +90,29 @@
     margin-bottom: 17px;
     font-size: 21px;
   }
+
+  .features__title--home::before {
+    width: 75px;
+    height: 72px;
+    top: 48px;
+    left: 50%;
+    margin-left: -37.5px;
+  }
+  .features__title--food::before {
+    width: 77px;
+    height: 70px;
+    top: 48px;
+    left: 50%;
+    margin-left: -38.5px;
+  }
+  .features__title--favors::before {
+    width: 64px;
+    height: 76px;
+    top: 48px;
+    left: 50%;
+    margin-left: -37.5px;
+  }
+
   .features__text {
     margin-top: 20px;
   }

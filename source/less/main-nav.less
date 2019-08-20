@@ -1,8 +1,8 @@
 .main-nav {
   width: 320px;
+  min-height: 56px;
   margin: 0 auto;
   position: relative;
-  padding-bottom: 56px;
 }
 
 .main-nav__list {
@@ -50,51 +50,28 @@
 		content: '';
 		position: absolute;
 		width: 23px;
-		height: 4px;
-		background-color: #669ec0;
-		top: 50%;
-		left: 50%;
-		margin-left: -11px;
+    height: 22px;
+    background-image: url("../img/icon-menu.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+		top: 17px;
+		left: 20px;
 		margin-top: -2px;
 	}
 }
 
-.site-list {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.site-list__item a {
-  display: block;
-  padding: 13px;
-  text-decoration: none;
-  color: #ffffff;
-
-  &:hover {
-		background-color: #669ec0;
-		border-top-color: #86b2cd;
-	}
-
-	&:active {
-		background-color: #5496bd;
-		border-top-color: #77acca;
-		color: rgba(white, 0.3);
-	}
-}
-
-.site-list__item {
-  min-height: 56px;
-  border-top: 1px solid #9ac2db;
-  border-bottom: 1px solid #678fa8;
-  text-align: center;
-
-  &:first-child {
-    border-top: none;
+ @media (max-width: @mobile-width-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
   }
-  &:last-child {
-    box-shadow: 0 -7px 7px -7px fade(#000000, 20%) inset;
+  .main-nav--opened .main-nav__wrapper {
+    margin-bottom: 56px;
+  }
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+  .main-nav--nojs .site-list__item {
+    display: block;
   }
 }
 
@@ -117,39 +94,5 @@
   .main-nav__toggle {
     display: none;
   }
-  .site-list__item {
-    border: none;
-    width: 153px;
-
-    &:nth-child(2) {
-      margin-right: 156px;
-    }
-
-    &:last-child {
-      box-shadow: none;
-    }
-  }
-  .site-list__item a {
-    color: #000000;
-
-    &:hover {
-      color: #81b3d2;
-      background-color: #ffffff;
-    }
-
-    &:active {
-      background-color: #ffffff;
-      color: rgba(0, 0, 0, 0.3);
-    }
-  }
 }
 
-@media (min-width: @desktop-width) {
-  .site-list__item {
-    width: 240px;
-
-    &:nth-child(2) {
-      margin-right: 240px;
-    }
-  }
-}
