@@ -62,7 +62,20 @@
       box-shadow: none;
     }
   }
-  .site-list__item a {
+  .site-list a {
+    color: #000000;
+
+    &:hover {
+      color: #81b3d2;
+      background-color: #ffffff;
+    }
+
+    &:active {
+      background-color: #ffffff;
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+  .site-list a[href] {
     color: #000000;
 
     &:hover {
