@@ -5,6 +5,11 @@
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, center top;
   background-size: cover;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .welcome-screen__logo {
@@ -26,6 +31,11 @@
     background-position: bottom, center top;
     background-size: auto, cover;
     height: 518px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
   }
   .welcome-screen__logo {
     height: 350px;
@@ -49,6 +59,11 @@
     background-position: bottom, center top;
     background-size: auto, cover;
     height: 518px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 }
 
