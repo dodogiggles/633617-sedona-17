@@ -45,7 +45,7 @@
                     </div>
                     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
                         <fieldset class="feedback-form__fieldset feedback-form__fieldset--impression impression">
-                            <legend class="feedback-form__legend feedback-form__legend--align-left">Ваше общее впечатление:</legend>
+                            <legend class="feedback-form__legend">Ваше общее впечатление:</legend>
                             <ul class="impression__list">
                                 <li class="impression__item">
                                     <input class="impression__input impression__input--radio visually-hidden" type="radio" name="impression" value="positive" id="positive" checked>
@@ -85,15 +85,19 @@
                         <fieldset class="feedback-form__fieldset feedback-form__fieldset--contact user-contact">
                             <legend class="feedback-form__legend feedback-form__legend--displacement">Контактная информация:</legend>
                             <div class="user-contact__inner">
-                                <label class="user-contact__label">
+                                <label class="user-contact__label user-contact__label--phone">
                                 <span class="user-contact__caption"><span class="user-contact__desktop-hidden">Контактный</span> телефон*:</span>
+                                <div class="user-contact__icon-group">
                                 <input class="user-contact__input user-contact__input--phone" type="tel" name="phone" placeholder="Введите телефон" required>
                                 <span class="user-contact__icon user-contact__icon--phone"></span>
+                                </div>
                                 </label>
-                                <label class="user-contact__label">
+                                <label class="user-contact__label user-contact__label--email">
                                 <span class="user-contact__caption">Электронная почта*:</span>
+                                <div class="user-contact__icon-group">
                                 <input class="user-contact__input" type="email" name="email" placeholder="Введите e-mail" required>
                                 <span class="user-contact__icon user-contact__icon--email"></span>
+                                </div>
                                 </label>
                             </div>
                         </fieldset>

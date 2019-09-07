@@ -1,7 +1,6 @@
 .name__label {
   display: flex;
   align-items: center;
-  width: 100%;
   margin-bottom: 22px;
 }
 
@@ -12,13 +11,11 @@
 .name__input {
   flex-grow: 1;
   flex-shrink: 1;
-  width: 70%;
   height: 58px;
 	padding: 0 20px;
 	margin: 0;
 	border: none;
   box-sizing: border-box;
-  min-width: 0;
   font-size: 16px;
   line-height: 26px;
   font-weight: 700;
@@ -79,8 +76,7 @@
 
 @media (min-width: @desktop-width) {
 
-  .impression__list {
-    padding-top: 16px;
-    padding-left: 80px;
+  .name__input {
+    padding-right: 95px;
   }
 }

@@ -14,15 +14,18 @@
   margin-left: 22px;
   margin-bottom: 10px;
 }
+.user-contact__icon-group {
+  display: flex;
+}
 
 .user-contact__input {
   position: relative;
   height: 58px;
 	padding: 0 20px;
-	margin: 0;
+  margin: 0;
+  flex-grow: 1;
 	border: none;
   box-sizing: border-box;
-  min-width: 0;
   font-size: 16px;
   line-height: 26px;
   font-weight: 700;
@@ -72,7 +75,6 @@
 }
 
 .user-contact__icon {
-  position: absolute;
   bottom: 0;
   width: 58px;
   height: 58px;
@@ -100,9 +102,6 @@
   .user-contact__label {
     margin-bottom: 25px;
   }
-  .user-contact__input {
-    width: 648px;
-  }
   .user-contact__icon {
     left: 590px;
   }
@@ -124,18 +123,17 @@
     align-items: center;
     justify-content: space-between;
   }
+  .user-contact__input {
+    padding-right: 40px;
+  }
+  .user-contact__label--phone {
+    width: 280px;
+  }
   .user-contact__caption {
     margin: 0 20px 0 0;
   }
   .user-contact__desktop-hidden {
     display: none;
-  }
-  .user-contact__input {
-    width: 315px;
-
-    &--phone {
-      width: 311px;
-    }
   }
   .user-contact__icon {
     position: relative;
