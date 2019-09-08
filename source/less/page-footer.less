@@ -33,25 +33,24 @@
 
 @media (min-width: @tablet-width) {
   .page-footer {
-    width: @tablet-width;
-    margin: 0 auto;
-    background-color: #ffffff;
-    padding-top: 40px;
-    padding-bottom: 40px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
   }
   .page-footer__hashtag {
     margin: 0;
   }
   .page-footer__social {
+    width: 33.3%;
     margin: 0;
+    padding-right: 11px;
+    text-align: center;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-footer {
-    width: @desktop-width;
+    padding: 40px 120px;
   }
 }
