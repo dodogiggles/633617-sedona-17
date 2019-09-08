@@ -26,13 +26,12 @@
 }
 
 .advantages__description-wrapper {
-  padding-bottom: 38px;
   padding-top: 40px;
 }
 
 .advantages__description-wrapper--extra {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 4px;
 }
 
 .advantages__description-wrapper--extra--line {
@@ -44,14 +43,15 @@
 }
 
 .advantages__number {
-  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages__title {
   margin: 0;
   padding: 0;
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   padding: 0 20px;
   font-size: 18px;
   line-height: 26px;
@@ -62,15 +62,15 @@
   margin: 0;
   padding: 0;
   text-transform: uppercase;
+  padding-bottom: 10px;
 }
 
 .advantages__description {
   position: relative;
   box-sizing: border-box;
   text-align: center;
-  padding-top: 40px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 20px;
   font-size: 14px;
 }
@@ -114,16 +114,63 @@
   .advantages__description-wrapper {
     margin: 0;
     padding: 0;
+    padding-top: 45px;
     width: auto;
   }
   .advantages__description--extra {
+    width: 256px;
     border: none;
   }
   .advantages__description-wrapper--extra--line {
     border-bottom: none;
   }
+  .advantages__title {
+    font-size: 21px;
+  }
   .advantages__image-wrapper {
     width: 512px;
+  }
+  .advantages__item--bridge {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .advantages__description-wrapper--extra {
+    padding-top: 41px;
+    padding-bottom: 30px;
+  }
+  .advantages__title--road {
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+  }
+  .advantages__title--tourists {
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+  }
+  .advantages__text--space {
+    width: 170px;
+    margin: 0 auto;
+  }
+  .advantages__text--road {
+    width: 140px;
+    margin: 0 auto;
+  }
+  .advantages__text--tourists {
+    width: 150px;
+    margin: 0 auto;
+  }
+  .advantages__text--place {
+    width: 170px;
+    margin: 0 auto;
+  }
+  .advantages__text--bridge {
+    width: 170px;
+    margin: 0 auto;
+  }
+  .advantages__title--bridge {
+    width: 100px;
+    margin: 0 auto;
   }
 }
 
@@ -134,10 +181,44 @@
   .advantages__description {
     width: 400px;
   }
+  .advantages__description--extra {
+    width: 400px;
+  }
   .advantages__description-wrapper {
-    padding-top: 60px;
+    padding-top: 52px;
+  }
+  .advantages__image-wrapper {
+    width: 800px;
+    height: 256px;
+  }
+  .advantages__title {
+    margin: 0;
+    padding: 0;
+    width: 160px;
+    margin: 0 auto;
+  }
+  .advantages__number {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+  }
+  .advantages__text {
+    margin: 0;
+    padding: 0;
+    width: 270px;
+    margin: 0 auto;
+  }
+  .advantages__text--bridge {
+    width: 220px;
+  }
+  .advantages__description-wrapper--extra {
+    padding-top: 44px;
     padding-bottom: 60px;
-    padding-right: 70px;
-    padding-left: 70px;
+  }
+  .advantages__title--tourists {
+    width: 100px;
+  }
+  .advantages__text--space {
+    width: 300px;
   }
 }
